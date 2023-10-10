@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- criando formulario -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<section class="container d-flex justify-content-center mt-5">
+  <!-- criando a classe do formulario -->
+        <form class="card p-3 col-3">
+            <div class="mb-3">
+              <h4 class="d-flex justify-content-center mb-4 mt-2">CADASTRO SISTEMA</h4>
+              <label class="form-label">Digite uma</label>
+              <input type="text" class="form-control" id="nome">
+              <div class="form-text">Como você gostaria de ser chamado?</div>
+            </div>
+            <!-- botao inserido e informações capturadas -->
+            <button class="btn btn-dark" onclick="texto()">Enviar</button>
+            <script>
+              // inserindo o alert 
+              function texto(){
+                const nome = document.querySelector("#nome").value;
+                alert('seja bem-vindo ' + nome);
+              }
+            </script>
+          </form>
+</section>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- //criando formulario -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <section class="container d-flex justify-content-center mt-5">
+            <form class="card p-3 col-3">
+                <h4 class="d-flex justify-content-center mb-4 mt-2">CALCULADORA</h4>
+                <!-- inserindo valores -->
+                <div class="valor1">
+                  <label class="form-label">Digite o Primeiro Valor</label>
+                  <input type="text" class="form-control" id="valor">
+                </div>
+    
+                <div class="valor2">
+                  <label class="form-label">Digite o Segundo Valor</label>
+                  <input type="text" class="form-control" id="valorx">
+                  
+                </div>
+                <!-- botao -->
+                <button class="btn btn-dark" onclick ="calculo()">Calcular</button>
+              </form>
+       </section>
+       <!-- capturando e selecionando as informações -->
+            <script>
+              function calculo(){
+                const valor1  =+ document.querySelector("#valor").value;
+                const valor2  =+ document.querySelector("#valorx").value;
+                var soma = valor1+valor2;
+                var subtracao = valor1-valor2;
+                var multiplicacao = valor1*valor2;
+                var divisao = valor1/valor2;
+                // inserindo os valores
+                alert('a soma é:' + soma);
+                alert('a sub é:' + subtracao);
+                alert('a mult é:' + multiplicacao);
+                alert('a div é:' + divisao);
+
+              }
+            </script>
+          </form>
+</section>
+</body>
+</html>
